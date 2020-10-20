@@ -18,6 +18,19 @@ explore micro structure
             int result = a + b;
             Console.WriteLine(value: result);
             
-
         }
 ````
+###### main() function call the add() function and add() returen the result value to main()
+```c#
+static void Main(string[] args)
+        {
+            add(50,60);
+            Console.WriteLine();
+        }
+        static int add(int a,int b)
+        {
+            
+            int result = a + b;
+            return result;
+        }
+```
