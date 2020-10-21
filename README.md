@@ -44,12 +44,21 @@ explore micro structure
             Console.WriteLine("Student grade before extra credit {0}", grade[0]);
             giveExtragrade(grade);
             Console.WriteLine("Student grade after extra credit {0}", grade[0]);
+            
+            
+            //ref keyword use to create force to reference
+            int studentGrade2 = 75;
+            Console.WriteLine("Student grade before extra credit {0}", studentGrade2);
+            giveExtracredit2(ref studentGrade2);
+            Console.WriteLine("Student grade after exra credit {0}", studentGrade2);
 
 
         }
         public static void giveExtracredit(int studentGrade) => studentGrade += 3;
 
         public static void giveExtragrade(int[] grade) => grade[0] += 3;
+        
+        public static void giveExtracredit2(ref int studentGrade2) => studentGrade2 += 3;
     }
 
 ```
