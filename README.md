@@ -28,3 +28,28 @@ explore micro structure
             return result;
         }
 ```
+###### pass by value and pass by reference
+```c#
+ static void Main(string[] args)
+        {
+            //pass by value
+            var studentGrade = 75;
+            Console.WriteLine("student grade before extra credit {0}", studentGrade);
+            giveExtracredit(studentGrade);
+            Console.WriteLine("student grade after extra credit {0}", studentGrade);
+
+            
+            //pass by reference
+            int[] grade = new int[] { 10 };
+            Console.WriteLine("Student grade before extra credit {0}", grade[0]);
+            giveExtragrade(grade);
+            Console.WriteLine("Student grade after extra credit {0}", grade[0]);
+
+
+        }
+        public static void giveExtracredit(int studentGrade) => studentGrade += 3;
+
+        public static void giveExtragrade(int[] grade) => grade[0] += 3;
+    }
+
+```
