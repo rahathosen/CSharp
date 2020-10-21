@@ -51,6 +51,13 @@ explore micro structure
             Console.WriteLine("Student grade before extra credit {0}", studentGrade2);
             giveExtracredit2(ref studentGrade2);
             Console.WriteLine("Student grade after exra credit {0}", studentGrade2);
+            
+            //out keyword
+            int add;
+            int mult;
+            AddMult(5, 10, out add, out mult);
+            Console.WriteLine(add);
+            Console.WriteLine(mult);
 
 
         }
@@ -59,6 +66,13 @@ explore micro structure
         public static void giveExtragrade(int[] grade) => grade[0] += 3;
         
         public static void giveExtracredit2(ref int studentGrade2) => studentGrade2 += 3;
+        
+        public static void AddMult(int a, int b, out int add, out int mult)
+        {
+            add = a + b;
+            mult = a * b;
+
+        }
     }
 
 ```
