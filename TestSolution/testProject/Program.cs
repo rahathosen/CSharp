@@ -9,6 +9,12 @@ namespace testProject
 
         public static void Main(string[] args)
         {
+            #region test git
+
+            Console.WriteLine("Hello git!");
+
+            #endregion test git
+
             #region Enum
 
             /*
