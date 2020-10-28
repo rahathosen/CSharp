@@ -13,14 +13,25 @@ namespace testProject
         public double Price
         {
             get { return _Price; }
-            set { _Price = value < 0 ? 0 : value; }
-            /* set
-             {
-                 if (value < 0)
-                     _Price = 0;
-                 else
-                     _Price = value;
-             }*/
+            /*set { _Price = value < 0 ? 0 : value; }*/
+            set
+            {
+                if (value < 0)
+                    _Price = 0;
+                else
+                    _Price = value;
+            }
+        }
+
+        //Overriding
+        public virtual string FormatPrice()
+        {
+            return $"Taka: {Price.ToString("0.00")}";
+        }
+
+        public virtual double DiscountPrice()
+        {
+            return Price * 15 / 100.0;
         }
     }
 }

@@ -86,13 +86,13 @@ namespace testProject
             var aBook = new Book();
             aBook.Name = "C# Programming";
             aBook.Description = "Something";
-            aBook.Price = -50;
+            aBook.Price = 50;
             aBook.Atuthor = "M. Stive";
 
             var anElectronics = new Electronics();
             anElectronics.Name = "Camera";
             anElectronics.Description = "Smart  DSLR";
-            anElectronics.Price = 50000;
+            anElectronics.Price = 25000.5533;
             anElectronics.BrandName = "Cannon";
 
             product[0] = aBook;
@@ -110,7 +110,9 @@ namespace testProject
         {
             Console.WriteLine($"Name: {product.Name}");
             Console.WriteLine($"Description: {product.Description}");
-            Console.WriteLine($"Price: {product.Price}");
+            Console.WriteLine($"Price= {product.FormatPrice()}");
+            Console.WriteLine($"Discount= {product.DiscountPrice().ToString("0.00")}");
+            Console.WriteLine($"Total Price= {(product.Price - product.DiscountPrice()).ToString("0.00")}");
 
             if (product is Book)
             {
