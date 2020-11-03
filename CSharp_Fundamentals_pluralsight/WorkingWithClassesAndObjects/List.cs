@@ -8,18 +8,13 @@ namespace WorkingWithClassesAndObjects
     {
         public void newlist()
         {
-            Book book = new Book();
+            Book book = new Book("Scott Grade Book");
             book.AddGrade(55.5);
-            var grade = new List<double>() { 55.5, 43, 60.5, 80, 75.5 };
-            grade.Add(90.5);
+            book.AddGrade(95.7);
+            book.AddGrade(25.0);
+            book.AddGrade(55.7);
 
-            var result = 0.0;
-            foreach (double item in grade)
-            {
-                result += item;
-            }
-            result /= grade.Count;
-            Console.WriteLine($"The Average graede {result:N1}");
+            book.Showstatistics();
         }
     }
 }
