@@ -1,8 +1,21 @@
 # csharp
 explore micro structure
-
-# Formate
+# Format
 ```c#
+
+```
+
+# Array collection initializer
+```c#
+var number = new[] { 5.0, 6.5, 7.3 };        //! one style array
+             Console.WriteLine(number[0]);
+
+            int[] myary = new int[] { 5, 6, 7 };        //! second style array
+            Console.WriteLine(myary[1]);
+
+
+             int[] myary3 = { 5, 6, 7 };               //! third style array
+             Console.WriteLine(myary3[2]);
 
 ```
 ###### Just main() funcion use the add() function means void main() function call the void add() function
