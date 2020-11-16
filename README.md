@@ -7,7 +7,7 @@ explore micro structure
 
 # Array collection initializer
 ```c#
-var number = new[] { 5.0, 6.5, 7.3 };        //! one style array
+             var number = new[] { 5.0, 6.5, 7.3 };        //! one style array
              Console.WriteLine(number[0]);
 
             int[] myary = new int[] { 5, 6, 7 };        //! second style array
