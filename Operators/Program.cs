@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Operators
+namespace Threads
 {
     class Program
     {
