@@ -6,3 +6,7 @@
 /CSharp_Fundamentals_pluralsight/WorkingWithClassesAndObjects/obj
 /Threads/obj
 /Threads/bin
+/.vs
+/.idea
+**/bin
+**/obj
